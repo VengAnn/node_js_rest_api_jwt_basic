@@ -11,12 +11,10 @@ run => npm init -y
 + bcryptjs (for password hashing)
 + dotenv (for environment variable management)
 + nodemon (for auto-restarting the server during development)
-```bash
 run => npm install express mysql2 jsonwebtoken bcryptjs dotenv
 run => npm install --save-dev nodemon
 
 + add this on package.json
-```bash
  "scripts": {
     "start": "node server.js",  // Command to start the server
     "dev": "nodemon server.js"  // Command to start the server with nodemon for development
@@ -30,10 +28,8 @@ run => npm run dev
 ## Handling image uploads in your Express application, you can use middleware such as multer to handle file uploads. Here’s how you can set up routes for uploading and retrieving images:
 
 Install Multer (this for uploaded files)
-```bash
 run => npm install multer
 
 and install this for save image on unquie name 
-```bash
 run => npm install uuid
 

@@ -24,8 +24,16 @@ app.use(express.json());
 // Routes
 app.use('/api', apiRoutes);
 
-// Start the server
+//Start the server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+//This for run with my own IP address Start the server
+// const IP_ADDRESS = '192.168.0.105';
+// const PORT = process.env.PORT || 3000;
+// app.listen(PORT, IP_ADDRESS, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
